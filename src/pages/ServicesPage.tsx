@@ -54,7 +54,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 1 – 7',
       location: 'Regional Growing Zones & ECX Centers',
       icon: Search,
-      image: '/src/assets/images/about_ethiopian_highlands_1791913738798.jpg',
+      image: '/images/about_ethiopian_highlands_1791913738798.jpg',
       description:
         'We evaluate availability across active harvest pools in Sidama, Yirgacheffe, Guji, Humera, and the Rift Valley. Each lot is traced to its origin cooperative or ECX primary warehouse, ensuring verified authenticity and strict adherence to export quotas.',
       deliverables: [
@@ -72,7 +72,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 7 – 12',
       location: 'Central Liquoring Unit & Commercial Labs (Addis Ababa)',
       icon: Microscope,
-      image: '/src/assets/images/about_quality_inspection_1791913761072.jpg',
+      image: '/images/about_quality_inspection_1791913761072.jpg',
       description:
         'Commodity samples undergo rigorous laboratory examination. Coffee is cupped according to SCA protocols by certified Q-graders at the Ethiopian Coffee & Tea Authority (ECTA). Sesame and grains undergo optical Sortex 99.5% purity testing, moisture analysis, and defect tolerance counting.',
       deliverables: [
@@ -91,7 +91,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 12 – 16',
       location: 'Export Processing & Dry Mills',
       icon: PackageCheck,
-      image: '/src/assets/images/services_coffee_cupping_1791914146177.jpg',
+      image: '/images/services_coffee_cupping_1791914146177.jpg',
       description:
         'Agricultural commodities are packed to withstand equatorial maritime transit. Specialty coffee is sealed in 60kg multi-layer GrainPro hermetic oxygen-barrier liners inside natural jute sacks. Sesame and pulses are double-stitched into new 50kg food-grade PP bags with buyer-specified bilingual stencils.',
       deliverables: [
@@ -109,7 +109,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 16 – 20',
       location: 'Ministry of Agriculture & Commercial Banks (Addis Ababa)',
       icon: FileCheck2,
-      image: '/src/assets/images/about_quality_inspection_1791913761072.jpg',
+      image: '/images/about_quality_inspection_1791913761072.jpg',
       description:
         'All export documentation is prepared in strict compliance with National Bank of Ethiopia foreign exchange directives and international trade conventions. Statutory phytosanitary certificates, non-GMO declarations, and Certificates of Origin are issued prior to customs release.',
       deliverables: [
@@ -128,7 +128,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 20 – 24',
       location: '750 km Inland Logistics Highway',
       icon: Truck,
-      image: '/src/assets/images/services_port_logistics_1791914145402.jpg',
+      image: '/images/services_port_logistics_1791914145402.jpg',
       description:
         'Containers are staged at the Modjo Intermodal Dry Port and transported along the 750 km Ethio-Djibouti corridor via the modern electrified railway or bonded commercial heavy transport fleet directly to the maritime terminals at Djibouti.',
       deliverables: [
@@ -146,7 +146,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onReques
       timing: 'Day 24 – 28',
       location: 'Doraleh Container Terminal (Port of Djibouti)',
       icon: Ship,
-      image: '/src/assets/images/services_port_logistics_1791914145402.jpg',
+      image: '/images/services_port_logistics_1791914145402.jpg',
       description:
         'At the Port of Djibouti, containers undergo final surveyor inspection (SGS / Bureau Veritas upon request) before being loaded onto scheduled ocean liners (Maersk, MSC, CMA CGM, ESLSE). The clean on-board Ocean Bill of Lading is released and dispatched for banking negotiation.',
       deliverables: [

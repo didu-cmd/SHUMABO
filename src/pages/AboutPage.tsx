@@ -189,7 +189,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-[#E5DED2] shadow-lg bg-[#EAE1D3] aspect-4/3">
               <img
-                src="/src/assets/images/about_quality_inspection_1791913761072.jpg"
+                src="/images/about_quality_inspection_1791913761072.jpg"
                 alt="Agricultural trade inspection of coffee and grains on traditional raised African drying beds"
                 className="w-full h-full object-cover"
               />

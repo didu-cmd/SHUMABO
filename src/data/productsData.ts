@@ -11,7 +11,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'World-renowned floral jasmine aromatics, citrus bergamot notes, and tea-like elegance.',
     description:
       'Grown at extreme high altitudes in the Gedeo zone of southern Ethiopia, Yirgacheffe washed green coffee is considered the global gold standard of clean, aromatic Arabica. Cherries undergo wet fermentation, fresh mountain water washing, and gentle solar drying on raised African bamboo beds.',
-    image: '/src/assets/images/coffee_ethiopian_export_1791911711943.jpg',
+    image: '/images/coffee_ethiopian_export_1791911711943.jpg',
     originRegions: ['Yirgacheffe', 'Konga', 'Kochere', 'Wenago', 'Gedeo Zone'],
     altitude: '1,900m – 2,200m ASL',
     flavorOrProfile: 'Jasmine blossom, bergamot, Meyer lemon, stone peach, silky tea body',
@@ -43,7 +43,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Intense ripe berry sweetness, dried blueberry aromas, and rich velvety body.',
     description:
       'Sourced from the forested mountain ridges of Guji and Sidama, these cherries are dried whole with their sweet fruit pulp intact under intense equatorial sun for 18 to 25 days. The result is a cup brimming with jammy fruit complexity, wild strawberry, and heavy chocolate undertones.',
-    image: '/src/assets/images/services_coffee_cupping_1791914146177.jpg',
+    image: '/images/services_coffee_cupping_1791914146177.jpg',
     originRegions: ['Guji (Uraga, Hambela, Shakiso)', 'Sidama (Bensa, Aleta Wondo)'],
     altitude: '1,850m – 2,250m ASL',
     flavorOrProfile: 'Wild blueberry, ripe strawberry jam, milk chocolate, lavender, honey finish',
@@ -74,7 +74,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Consistent sweet cocoa balance and low acidity ideal for commercial roasters and espresso blends.',
     description:
       'Representing the backbone of Western Ethiopian coffee trade, Limu and Djimmah coffees offer exceptional value for commercial roasters, supermarket private labels, and espresso blend bases. Limu yields a mild, balanced sweet cup with low acidity, while Djimmah offers heavy body and earthy cocoa complexity.',
-    image: '/src/assets/images/coffee_ethiopian_export_1791911711943.jpg',
+    image: '/images/coffee_ethiopian_export_1791911711943.jpg',
     originRegions: ['Limu Kossa', 'Jimma / Djimmah', 'Kaffa Biosphere Reserve'],
     altitude: '1,450m – 1,850m ASL',
     flavorOrProfile: 'Dark chocolate, roasted hazelnut, caramelized sugar, mild stone fruit',
@@ -106,7 +106,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'High natural oil yield, sweet nutty aroma, and uniform white color for global processors.',
     description:
       'Grown in the semi-arid, fertile black soils of Northwestern Ethiopia (Tigray & Amhara), Humera sesame seeds are renowned worldwide as the premier raw ingredient for high-grade tahini, halva, bakery coatings, and confectionery paste. Prized for its uniform whitish hue and naturally sweet taste.',
-    image: '/src/assets/images/sesame_seeds_export_1791911711194.jpg',
+    image: '/images/sesame_seeds_export_1791911711194.jpg',
     originRegions: ['Humera', 'Gondar', 'Metema', 'Tigray / Amhara Border'],
     altitude: '550m – 800m Lowland Basins',
     flavorOrProfile: 'Sweet nutty aroma, no bitter astringency, rich oil mouthfeel',
@@ -138,7 +138,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Exceptional oil content exceeding 52% tailored for seed crushers and industrial extraction.',
     description:
       'Cultivated across Western Ethiopia in the Wollega growing zones, this variety features a slightly brownish to mixed-white color profile but delivers superior natural oil yields (>52% to 54%). Highly sought after by commercial oilseed mills in the Middle East, East Asia, and Europe for cooking oil production.',
-    image: '/src/assets/images/sesame_seeds_export_1791911711194.jpg',
+    image: '/images/sesame_seeds_export_1791911711194.jpg',
     originRegions: ['Wollega', 'Nekemte', 'Bako Basin', 'Oromia'],
     altitude: '1,200m – 1,700m ASL',
     flavorOrProfile: 'Nutty, high-density seed with rich lipid concentration',
@@ -170,7 +170,7 @@ export const productsData: ProductSpecification[] = [
     tagline: '100% naturally gluten-free, dense in iron, calcium, and amino acids for health food producers.',
     description:
       'Ethiopia is the biological motherland of teff, the world’s smallest grain possessing extraordinary nutritional density. Magna White Teff is the highest-value cultivar, yielding a mild, sweet, slightly nutty flour used globally in gluten-free baking, nutritious pastas, infant cereals, and traditional injera flatbreads.',
-    image: '/src/assets/images/grains_teff_export_1791911711536.jpg',
+    image: '/images/grains_teff_export_1791911711536.jpg',
     originRegions: ['East Shewa (Ada’a / Bishoftu)', 'Gojjam', 'Arsi Plateau'],
     altitude: '1,800m – 2,400m Highland Plateau',
     flavorOrProfile: 'Mild, sweet, pleasant nutty finish, 100% naturally gluten-free',
@@ -202,7 +202,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Rich in dietary fiber, prebiotic compounds, and bold rustic flavor profile.',
     description:
       'Red and brown teff grains contain concentrated polyphenol antioxidants and higher mineral iron contents than white cultivars. Ideal for specialty gluten-free whole-grain bread manufacturers, health porridge formulations, and functional nutrition brands seeking unrefined ancient grain provenance.',
-    image: '/src/assets/images/grains_teff_export_1791911711536.jpg',
+    image: '/images/grains_teff_export_1791911711536.jpg',
     originRegions: ['Gojjam', 'North Shewa', 'Bale Highlands'],
     altitude: '1,900m – 2,500m ASL',
     flavorOrProfile: 'Earthy, rich whole-grain aroma with cocoa and hazelnut undertones',
@@ -233,7 +233,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Uniform seed caliber, high protein, and optimal water absorption for food canners.',
     description:
       'Grown throughout the Great Rift Valley, Ethiopian White Pea Beans (known globally as navy beans or haricot beans) are in strong international demand by commercial canning corporations for baked bean production, retail packaging, and institutional catering.',
-    image: '/src/assets/images/commodities_pulses_export_1791911711658.jpg',
+    image: '/images/commodities_pulses_export_1791911711658.jpg',
     originRegions: ['Rift Valley (Hawassa, Ziway, Shashemene)', 'Gondar'],
     altitude: '1,500m – 1,900m ASL',
     flavorOrProfile: 'Smooth skin, creamy texture, neutral clean legume flavor',
@@ -264,7 +264,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Lustrous deep red color, large uniform caliber, and firm texture for packaging.',
     description:
       'Highland Ethiopian red kidney beans are prized for their firm seed coat that resists splitting during thermal food processing. Used by international bean canners, dry-pack grocery distributors, and frozen entree manufacturers across Europe, the Middle East, and Asia.',
-    image: '/src/assets/images/commodities_pulses_export_1791911711658.jpg',
+    image: '/images/commodities_pulses_export_1791911711658.jpg',
     originRegions: ['Hawassa', 'Arsi Negelle', 'Gojjam', 'Wolaita'],
     altitude: '1,600m – 2,100m ASL',
     flavorOrProfile: 'Dense hearty texture, mineral-rich earthy legume taste',
@@ -294,7 +294,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Protein-dense legumes selected for hummus manufacturing, milling, and canning.',
     description:
       'Cultivated in the heavy highland vertisols of Central and Northern Ethiopia. We coordinate export shipments of both smaller Desi chickpeas (high fiber, ideal for flour and splitting) and larger Kabuli chickpeas (ideal for whole canning, snack roasting, and smooth hummus formulations).',
-    image: '/src/assets/images/commodities_pulses_export_1791911711658.jpg',
+    image: '/images/commodities_pulses_export_1791911711658.jpg',
     originRegions: ['Gondar', 'Gojjam', 'Shewa Plateau'],
     altitude: '1,700m – 2,300m ASL',
     flavorOrProfile: 'Rich nutty flavor, firm seed structure',
@@ -323,7 +323,7 @@ export const productsData: ProductSpecification[] = [
     tagline: 'Vibrant green luster, uniform sizing, and superior germination rates for sprouts and milling.',
     description:
       'Grown in the lowlands and river valleys of Ethiopia, our Grade 1 Green Mung Beans feature an intense emerald green luster, high protein concentration, and rigorous sorting. In high demand in Asian and Middle Eastern markets for fresh bean sprout production, cellophane noodles, and plant-based protein isolates.',
-    image: '/src/assets/images/commodities_pulses_export_1791911711658.jpg',
+    image: '/images/commodities_pulses_export_1791911711658.jpg',
     originRegions: ['Rift Valley', 'Gambella', 'Metema Lowlands'],
     altitude: '600m – 1,200m Lowland Valleys',
     flavorOrProfile: 'Clean, sweet, crisp vegetal profile',
