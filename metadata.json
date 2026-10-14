@@ -1,0 +1,6 @@
+{
+  "name": "Shumabo Import & Export",
+  "description": "Ethiopian agricultural commodity trading and export company connecting premium Ethiopian coffee, sesame seeds, grains, and commodities with global markets.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

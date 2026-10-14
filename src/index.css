@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   SHUMABO IMPORT & EXPORT — TYPOGRAPHY DESIGN SYSTEM
+   Approved Font Families:
+   - Display & Editorial: Solene (fallback: Georgia, "Times New Roman", serif)
+   - Body & Interface: Inspires (fallback: "Helvetica Neue", Arial, sans-serif)
+   ========================================================================== */
+
+/* Solene — Modern Serif @font-face declarations */
+@font-face {
+  font-family: 'Solene';
+  src: url('/fonts/Solene-Regular.woff2') format('woff2'),
+       url('/fonts/Solene-Regular.woff') format('woff'),
+       url('/fonts/Solene.woff2') format('woff2'),
+       url('/fonts/Solene.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Solene';
+  src: url('/fonts/Solene-Bold.woff2') format('woff2'),
+       url('/fonts/Solene-Bold.woff') format('woff'),
+       url('/fonts/Solene-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Inspires — Elegant Corporate Display Font @font-face declarations */
+@font-face {
+  font-family: 'Inspires';
+  src: url('/fonts/Inspires-Regular.woff2') format('woff2'),
+       url('/fonts/Inspires-Regular.woff') format('woff'),
+       url('/fonts/Inspires.woff2') format('woff2'),
+       url('/fonts/Inspires.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inspires';
+  src: url('/fonts/Inspires-Medium.woff2') format('woff2'),
+       url('/fonts/Inspires-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inspires';
+  src: url('/fonts/Inspires-SemiBold.woff2') format('woff2'),
+       url('/fonts/Inspires-SemiBold.woff') format('woff'),
+       url('/fonts/Inspires-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    /* Brand Color Palette */
+    --color-primary: #59351F;
+    --color-dark: #2B1D16;
+    --color-accent: #B88B50;
+    --color-background: #F8F5EF;
+    --color-surface: #FFFFFF;
+    --color-sand: #EAE1D3;
+    --color-text: #2B1D16;
+    --color-muted: #6F6258;
+    --color-border: #E5DED2;
+
+    /* Centralized Font Stacks with Fallbacks */
+    --font-display: 'Solene', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inspires', 'Helvetica Neue', Arial, sans-serif;
+
+    /* Responsive Typography Scale Tokens */
+    --type-hero-headline: clamp(2.8rem, 5.8vw, 5.5rem);
+    --type-main-heading: clamp(2.4rem, 4.2vw, 4.25rem);
+    --type-section-heading: clamp(1.9rem, 3vw, 3rem);
+    --type-subsection-heading: clamp(1.25rem, 2vw, 1.65rem);
+    --type-intro-paragraph: clamp(1.05rem, 1.3vw, 1.2rem);
+    --type-body: 1rem;
+    --type-secondary: 0.875rem;
+    --type-eyebrow: clamp(0.75rem, 1vw, 0.8125rem);
+    --type-button-nav: clamp(0.875rem, 1.1vw, 1rem);
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Display and Editorial Headings use Solene */
+  h1, h2, h3, .font-display, .font-serif {
+    font-family: var(--font-display);
+    font-feature-settings: "kern", "liga", "clig";
+  }
+
+  /* Body, Navigation, Forms and Buttons use Inspires */
+  nav, button, input, select, textarea, p, span, li, label, .font-body, .font-sans {
+    font-family: var(--font-body);
+  }
+}
+
+/* Reusable Typography Scale Classes */
+.text-hero-headline {
+  font-family: var(--font-display);
+  font-size: var(--type-hero-headline);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+.text-main-heading {
+  font-family: var(--font-display);
+  font-size: var(--type-main-heading);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+
+.text-section-heading {
+  font-family: var(--font-display);
+  font-size: var(--type-section-heading);
+  line-height: 1.16;
+  letter-spacing: -0.008em;
+}
+
+.text-subsection-heading {
+  font-family: var(--font-display);
+  font-size: var(--type-subsection-heading);
+  line-height: 1.25;
+}
+
+.text-intro-paragraph {
+  font-family: var(--font-body);
+  font-size: var(--type-intro-paragraph);
+  line-height: 1.62;
+}
+
+.text-eyebrow-label {
+  font-family: var(--font-body);
+  font-size: var(--type-eyebrow);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-btn-nav {
+  font-family: var(--font-body);
+  font-size: var(--type-button-nav);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* Accessibility & interaction styles */
+:focus-visible {
+  outline: 2px solid #B88B50;
+  outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
