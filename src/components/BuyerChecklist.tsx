@@ -73,32 +73,32 @@ export const BuyerChecklist: React.FC<BuyerChecklistProps> = ({ onApplyToCheckli
   };
 
   return (
-    <div className="bg-white border border-[#E5DED2] rounded-2xl p-6 sm:p-8 shadow-xs font-body">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#E5DED2]">
+    <div className="bg-white border border-[#E6DCDD] rounded-2xl p-6 sm:p-8 shadow-xs font-body">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-[#E6DCDD]">
         <div>
-          <span className="text-eyebrow-label text-[#B88B50] block mb-1">
+          <span className="text-eyebrow-label text-[#A90F1C] block mb-1">
             Procurement Tool
           </span>
-          <h3 className="font-display text-2xl font-bold text-[#2B1D16] mt-1">
+          <h3 className="font-display text-2xl font-bold text-[#241719] mt-1">
             Information to Prepare Before Requesting a Quote
           </h3>
-          <p className="text-xs sm:text-sm text-[#6F6258] mt-1 font-body">
+          <p className="text-xs sm:text-sm text-[#6F6062] mt-1 font-body">
             Ensure your procurement inquiry includes essential trade parameters for an expedited commercial review.
           </p>
         </div>
 
         {/* Readiness Meter */}
-        <div className="bg-[#F8F5EF] p-4 rounded-xl border border-[#E5DED2] text-right shrink-0">
-          <span className="text-xs font-semibold uppercase tracking-wider text-[#6F6258] block font-body">
+        <div className="bg-[#FAF8F7] p-4 rounded-xl border border-[#E6DCDD] text-right shrink-0">
+          <span className="text-xs font-semibold uppercase tracking-wider text-[#6F6062] block font-body">
             Inquiry Readiness
           </span>
           <div className="flex items-baseline justify-end gap-1.5 mt-0.5">
-            <span className="font-mono text-2xl font-bold text-[#59351F]">{progressPercent}%</span>
-            <span className="text-xs text-[#6F6258]">({completedCount}/{CHECKLIST_ITEMS.length})</span>
+            <span className="font-mono text-2xl font-bold text-[#A90F1C]">{progressPercent}%</span>
+            <span className="text-xs text-[#6F6062]">({completedCount}/{CHECKLIST_ITEMS.length})</span>
           </div>
-          <div className="w-32 h-1.5 bg-[#E5DED2] rounded-full mt-2 overflow-hidden">
+          <div className="w-32 h-1.5 bg-[#E6DCDD] rounded-full mt-2 overflow-hidden">
             <div
-              className="h-full bg-[#B88B50] rounded-full transition-all duration-300"
+              className="h-full bg-[#A90F1C] rounded-full transition-all duration-300"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -115,30 +115,30 @@ export const BuyerChecklist: React.FC<BuyerChecklistProps> = ({ onApplyToCheckli
               onClick={() => toggleCheck(item.id)}
               className={`p-4 rounded-xl border cursor-pointer transition-all ${
                 isChecked
-                  ? 'border-[#B88B50]/60 bg-[#F8F5EF]'
-                  : 'border-[#E5DED2] bg-white hover:border-[#B88B50]/30'
+                  ? 'border-[#A90F1C]/60 bg-[#FAF8F7]'
+                  : 'border-[#E6DCDD] bg-white hover:border-[#A90F1C]/30'
               }`}
             >
               <div className="flex items-start gap-3">
                 <button
                   type="button"
-                  className="mt-0.5 text-[#59351F] focus:outline-none cursor-pointer"
+                  className="mt-0.5 text-[#A90F1C] focus:outline-none cursor-pointer"
                   aria-label={`Toggle ${item.title}`}
                 >
                   {isChecked ? (
-                    <CheckSquare className="w-5 h-5 text-[#59351F]" />
+                    <CheckSquare className="w-5 h-5 text-[#A90F1C]" />
                   ) : (
-                    <Square className="w-5 h-5 text-[#6F6258]/60" />
+                    <Square className="w-5 h-5 text-[#6F6062]/60" />
                   )}
                 </button>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#2B1D16] font-display">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-[#241719] font-display">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-[#6F6258] mt-1 leading-relaxed font-body">
+                  <p className="text-xs text-[#6F6062] mt-1 leading-relaxed font-body">
                     {item.description}
                   </p>
-                  <p className="text-[11px] text-[#B88B50] font-medium mt-1.5 font-body">
+                  <p className="text-[11px] text-[#A90F1C] font-medium mt-1.5 font-body">
                     {item.recommendedDetail}
                   </p>
                 </div>
@@ -149,16 +149,16 @@ export const BuyerChecklist: React.FC<BuyerChecklistProps> = ({ onApplyToCheckli
       </div>
 
       {/* Action Footer */}
-      <div className="pt-4 border-t border-[#E5DED2] flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-body">
-        <p className="text-xs text-[#6F6258]">
+      <div className="pt-4 border-t border-[#E6DCDD] flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-body">
+        <p className="text-xs text-[#6F6062]">
           Checking items highlights details you are ready to confirm with Shumabo's trading desk.
         </p>
         <button
           onClick={handleApply}
-          className="inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#59351F] hover:bg-[#2B1D16] rounded-lg transition-colors cursor-pointer shadow-xs whitespace-nowrap"
+          className="inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#A90F1C] hover:bg-[#800D18] rounded-lg transition-colors cursor-pointer shadow-xs whitespace-nowrap"
         >
           <span>Transfer Selected Items to Quote Form</span>
-          <ArrowUpRight className="w-3.5 h-3.5" />
+          <ArrowUpRight className="w-4 h-4" />
         </button>
       </div>
     </div>

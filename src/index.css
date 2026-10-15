@@ -63,15 +63,15 @@
 @layer base {
   :root {
     /* Brand Color Palette */
-    --color-primary: #59351F;
-    --color-dark: #2B1D16;
-    --color-accent: #B88B50;
-    --color-background: #F8F5EF;
+    --color-primary: #A90F1C;
+    --color-dark: #800D18;
+    --color-accent: #C51B2A;
+    --color-background: #FAF8F7;
     --color-surface: #FFFFFF;
-    --color-sand: #EAE1D3;
-    --color-text: #2B1D16;
-    --color-muted: #6F6258;
-    --color-border: #E5DED2;
+    --color-sand: #F1ECEA;
+    --color-text: #241719;
+    --color-muted: #6F6062;
+    --color-border: #E6DCDD;
 
     /* Centralized Font Stacks with Fallbacks */
     --font-display: 'Solene', Georgia, 'Times New Roman', serif;
@@ -161,7 +161,7 @@
 
 /* Accessibility & interaction styles */
 :focus-visible {
-  outline: 2px solid #B88B50;
+  outline: 2px solid #A90F1C;
   outline-offset: 2px;
 }
 

@@ -50,7 +50,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8F5EF] text-[#2B1D16] selection:bg-[#B88B50]/30 selection:text-[#2B1D16]">
+    <div className="min-h-screen flex flex-col bg-[#FAF8F7] text-[#241719] selection:bg-[#A90F1C]/20 selection:text-[#241719]">
       {/* 1. Header (Top Bar Contract: 3 zones separated by gap-8) */}
       <Header
         currentPage={currentPage}
@@ -105,15 +105,21 @@ export default function App() {
         )}
       </main>
 
-      {/* 3. Quiet Editorial Footer */}
+      {/* 3. Footer */}
       <Footer
         onNavigate={handleNavigate}
         onRequestQuote={() => handleRequestQuote()}
         onOpenAdmin={() => setAdminOpen(true)}
       />
 
-      {/* 4. Authorized Commercial Lead Desk (Admin Modal) */}
-      {adminOpen && <AdminPortal onClose={() => setAdminOpen(false)} />}
+      {/* 4. Admin Portal Modal */}
+      {adminOpen && (
+        <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4">
+          <div className="bg-white w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border border-[#E6DCDD]">
+            <AdminPortal onClose={() => setAdminOpen(false)} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
