@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
+import { teamMembers } from '../data/teamData';
 import {
   MapPin,
   CheckCircle2,
@@ -14,7 +15,10 @@ import {
   Check,
   Sparkles,
   Search,
-  Scale
+  Scale,
+  Phone,
+  Mail,
+  UserCheck
 } from 'lucide-react';
 
 interface AboutPageProps {
@@ -114,6 +118,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
     }
   ];
 
+  const executiveLeaders = teamMembers.filter((m) => m.role === 'executive');
+  const professionalTeam = teamMembers.filter((m) => m.role === 'team');
+
   return (
     <div className="bg-[#FAF8F7] text-[#241719] min-h-screen">
       {/* =========================================================================
@@ -133,9 +140,9 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
             Shumabo Import & Export connects the rich agricultural heritage of Ethiopia with international procurement departments through quality-conscious sourcing, verified commercial specifications, and direct export discussions.
           </p>
 
-          <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-xs text-white border border-white/20">
+          <div className="inline-flex items-center gap-2 bg-white/10 px-4 py-1.5 rounded-full text-xs text-white border border-white/25">
             <ShieldCheck className="w-4 h-4 text-[#C51B2A]" />
-            <span>Addis Ababa HQ · Regional Farm-Gate Sourcing · Direct Port of Djibouti Freight Corridor</span>
+            <span>Addis Ababa HQ (Bole) · Regional Farm-Gate Sourcing · Direct Port of Djibouti Freight Corridor</span>
           </div>
         </div>
       </section>
@@ -218,9 +225,182 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          3. OUR CORE VALUES (INTERACTIVE VALUE PILLARS)
+          3. COMPANY LEADERSHIP & PROFESSIONAL TEAM SECTION
          ========================================================================= */}
       <section className="py-24 bg-white border-t border-b border-[#E6DCDD]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-eyebrow-label text-[#A90F1C] block mb-1">
+              Governance & Expertise
+            </span>
+            <h2 className="text-section-heading font-display font-bold text-[#241719] text-balance">
+              Company Leadership & Professional Team.
+            </h2>
+            <p className="text-xs sm:text-sm text-[#6F6062] mt-3 font-body leading-relaxed">
+              Meet the executive leadership directing our trade operations in Addis Ababa and our professional team managing international buyer relations.
+            </p>
+          </div>
+
+          {/* Executive Leadership Subsection */}
+          <div className="mb-16">
+            <div className="flex items-center gap-2 mb-8 border-b border-[#E6DCDD] pb-3">
+              <UserCheck className="w-5 h-5 text-[#A90F1C]" />
+              <h3 className="font-display text-xl font-bold text-[#241719]">
+                Executive Management
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {executiveLeaders.map((leader) => (
+                <div
+                  key={leader.id}
+                  className="bg-[#FAF8F7] rounded-2xl border border-[#E6DCDD] overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col sm:flex-row items-stretch"
+                >
+                  <div className="sm:w-2/5 relative min-h-[240px] bg-[#F1ECEA]">
+                    <img
+                      src={leader.imageUrl}
+                      alt={leader.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop';
+                      }}
+                    />
+                    <div className="absolute top-3 left-3 bg-[#800D18] text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
+                      Executive
+                    </div>
+                  </div>
+
+                  <div className="sm:w-3/5 p-6 flex flex-col justify-between font-body">
+                    <div>
+                      <h4 className="font-display text-xl font-bold text-[#241719] mb-1">
+                        {leader.name}
+                      </h4>
+                      <p className="text-xs font-semibold text-[#A90F1C] uppercase tracking-wider mb-3">
+                        {leader.position}
+                      </p>
+                      <p className="text-xs text-[#6F6062] leading-relaxed mb-4">
+                        {leader.bio}
+                      </p>
+                    </div>
+
+                    <div className="space-y-2 pt-4 border-t border-[#E6DCDD] text-xs">
+                      {leader.phone && (
+                        <div className="flex items-center gap-2">
+                          <Phone className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                          <a
+                            href={`tel:${leader.phone}`}
+                            className="text-[#241719] font-medium hover:text-[#A90F1C] transition-colors"
+                          >
+                            {leader.phone}
+                          </a>
+                        </div>
+                      )}
+                      {leader.email && (
+                        <div className="flex items-center gap-2">
+                          <Mail className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                          <a
+                            href={`mailto:${leader.email}`}
+                            className="text-[#241719] font-medium hover:text-[#A90F1C] transition-colors truncate"
+                          >
+                            {leader.email}
+                          </a>
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2 text-[#6F6062]">
+                        <MapPin className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                        <span>Bole, Addis Ababa, Ethiopia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Professional Team Subsection */}
+          <div>
+            <div className="flex items-center gap-2 mb-8 border-b border-[#E6DCDD] pb-3">
+              <Globe2 className="w-5 h-5 text-[#A90F1C]" />
+              <h3 className="font-display text-xl font-bold text-[#241719]">
+                Our Professional Team
+              </h3>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {professionalTeam.map((member) => (
+                <div
+                  key={member.id}
+                  className="bg-[#FAF8F7] rounded-2xl border border-[#E6DCDD] overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col sm:flex-row items-stretch"
+                >
+                  <div className="sm:w-2/5 relative min-h-[240px] bg-[#F1ECEA]">
+                    <img
+                      src={member.imageUrl}
+                      alt={member.name}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop';
+                      }}
+                    />
+                    <div className="absolute top-3 left-3 bg-[#A90F1C] text-white text-[10px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
+                      Team
+                    </div>
+                  </div>
+
+                  <div className="sm:w-3/5 p-6 flex flex-col justify-between font-body">
+                    <div>
+                      <h4 className="font-display text-xl font-bold text-[#241719] mb-1">
+                        {member.name}
+                      </h4>
+                      <p className="text-xs font-semibold text-[#A90F1C] uppercase tracking-wider mb-3">
+                        {member.position}
+                      </p>
+                      <p className="text-xs text-[#6F6062] leading-relaxed mb-4">
+                        {member.bio}
+                      </p>
+                    </div>
+
+                    <div className="space-y-2 pt-4 border-t border-[#E6DCDD] text-xs">
+                      {member.phone && (
+                        <div className="flex items-center gap-2">
+                          <Phone className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                          <a
+                            href={`tel:${member.phone}`}
+                            className="text-[#241719] font-medium hover:text-[#A90F1C] transition-colors"
+                          >
+                            {member.phone}
+                          </a>
+                        </div>
+                      )}
+                      {member.email && (
+                        <div className="flex items-center gap-2">
+                          <Mail className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                          <a
+                            href={`mailto:${member.email}`}
+                            className="text-[#241719] font-medium hover:text-[#A90F1C] transition-colors truncate"
+                          >
+                            {member.email}
+                          </a>
+                        </div>
+                      )}
+                      <div className="flex items-center gap-2 text-[#6F6062]">
+                        <MapPin className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
+                        <span>Bole, Addis Ababa, Ethiopia</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          4. OUR CORE VALUES (INTERACTIVE VALUE PILLARS)
+         ========================================================================= */}
+      <section className="py-24 bg-white border-b border-[#E6DCDD]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <span className="text-eyebrow-label text-[#A90F1C] block mb-1">
@@ -297,7 +477,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          4. STATUTORY COMPLIANCE & QUALITY VERIFICATION FRAMEWORK
+          5. STATUTORY COMPLIANCE & QUALITY VERIFICATION FRAMEWORK
          ========================================================================= */}
       <section className="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -336,7 +516,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          5. CALL TO ACTION BANNER
+          6. CALL TO ACTION BANNER
          ========================================================================= */}
       <section className="py-20 bg-[#800D18] text-white border-t border-[#A90F1C]/40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">

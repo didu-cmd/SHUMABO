@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { PageRoute } from './types';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
+import { BackToTop } from './components/BackToTop';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ProductsPage } from './pages/ProductsPage';
@@ -112,7 +113,10 @@ export default function App() {
         onOpenAdmin={() => setAdminOpen(true)}
       />
 
-      {/* 4. Admin Portal Modal */}
+      {/* 4. Floating Widgets: Back to Top */}
+      <BackToTop />
+
+      {/* 5. Admin Portal Modal */}
       {adminOpen && (
         <div className="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4">
           <div className="bg-white w-full max-w-5xl rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh] border border-[#E6DCDD]">
