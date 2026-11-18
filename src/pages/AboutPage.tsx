@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { PageRoute } from '../types';
 import { teamMembers } from '../data/teamData';
+import { BusinessCredentialsSection } from '../components/BusinessCredentialsSection';
 import {
   MapPin,
   CheckCircle2,
@@ -398,7 +399,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          4. OUR CORE VALUES (INTERACTIVE VALUE PILLARS)
+          4. BUSINESS CREDENTIALS & LEGAL DOCUMENTATION SECTION (NEW)
+         ========================================================================= */}
+      <BusinessCredentialsSection />
+
+      {/* =========================================================================
+          5. OUR CORE VALUES (INTERACTIVE VALUE PILLARS)
          ========================================================================= */}
       <section className="py-24 bg-white border-b border-[#E6DCDD]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -477,7 +483,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          5. STATUTORY COMPLIANCE & QUALITY VERIFICATION FRAMEWORK
+          6. STATUTORY COMPLIANCE & QUALITY VERIFICATION FRAMEWORK
          ========================================================================= */}
       <section className="py-24 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -516,7 +522,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
       </section>
 
       {/* =========================================================================
-          6. CALL TO ACTION BANNER
+          7. CALL TO ACTION BANNER
          ========================================================================= */}
       <section className="py-20 bg-[#800D18] text-white border-t border-[#A90F1C]/40">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
