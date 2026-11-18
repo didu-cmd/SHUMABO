@@ -36,7 +36,7 @@ export const teamMembers: TeamMember[] = [
     role: 'team',
     position: 'Sales Representative',
     email: 'dawitdesalegn@gmail.com',
-    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://cdn.corenexis.com/f/czghP3M9.jpg',
     bio: 'Manages wholesale buyer communications, product inquiry processing, and initial quotation scheduling for international clients.'
   },
   {
@@ -46,7 +46,7 @@ export const teamMembers: TeamMember[] = [
     position: 'Digital Marketing Manager',
     phone: '0900838981',
     email: 'nathandawit247@gmail.com',
-    imageUrl: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://cdn.corenexis.com/f/pZwmf66u.jpg',
     bio: 'Directs digital brand presence, buyer engagement channels, and international web communications for Shumabo trading desk.'
   }
 ];
