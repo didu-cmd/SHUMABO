@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onRequestQuote, onOp
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Headquarters: Bole, Addis Ababa, Ethiopia</span>
+                <span>Headquarters: Addis Ababa, Bole, Ethiopia</span>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onRequestQuote, onOp
                   </svg>
                 </a>
                 <a
-                  href="mailto:renderreal87@gmail.com"
+                  href="mailto:nathandawit247@gmail.com"
                   aria-label="Email Commercial Desk"
                   className="w-9 h-9 rounded-lg bg-[#A90F1C]/70 hover:bg-[#C51B2A] text-white flex items-center justify-center transition-colors border border-white/20"
                 >
@@ -239,7 +239,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onRequestQuote, onOp
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#FAF8F7]/60 font-body">
-          <p>© {new Date().getFullYear()} Shumabo Import & Export PLC. All rights reserved. Addis Ababa, Ethiopia.</p>
+          <p>© {new Date().getFullYear()} Shumabo Import & Export PLC. All rights reserved. Addis Ababa, Bole, Ethiopia.</p>
           <div className="flex items-center gap-6">
             <button onClick={() => onNavigate('contact')} className="hover:text-white transition-colors cursor-pointer">
               Terms of Trade

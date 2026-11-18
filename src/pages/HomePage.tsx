@@ -183,7 +183,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onRequestQuote }
           <div className="mt-16 pt-8 border-t border-white/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-left font-body">
             <div>
               <span className="text-[10px] uppercase tracking-wider text-[#FAF8F7]/80 font-semibold block">Origin Sourcing</span>
-              <p className="text-xs text-white font-medium mt-0.5">Addis Ababa, Ethiopia</p>
+              <p className="text-xs text-white font-medium mt-0.5">Addis Ababa, Bole, Ethiopia</p>
             </div>
             <div>
               <span className="text-[10px] uppercase tracking-wider text-[#FAF8F7]/80 font-semibold block">Sea Gateway</span>
@@ -366,7 +366,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onRequestQuote }
               </blockquote>
               <div className="border-t border-white/20 pt-4 text-xs text-[#FAF8F7]/80 font-body">
                 <strong className="text-white block">Shumabo Commercial Trade Desk</strong>
-                <span>Addis Ababa, Ethiopia · Global Gateway via Port of Djibouti</span>
+                <span>Addis Ababa, Bole, Ethiopia · Global Gateway via Port of Djibouti</span>
               </div>
             </div>
           </div>

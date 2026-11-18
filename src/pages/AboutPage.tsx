@@ -310,7 +310,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
                       )}
                       <div className="flex items-center gap-2 text-[#6F6062]">
                         <MapPin className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
-                        <span>Bole, Addis Ababa, Ethiopia</span>
+                        <span>Addis Ababa, Bole, Ethiopia</span>
                       </div>
                     </div>
                   </div>
@@ -387,7 +387,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onRequestQuote
                       )}
                       <div className="flex items-center gap-2 text-[#6F6062]">
                         <MapPin className="w-3.5 h-3.5 text-[#A90F1C] shrink-0" />
-                        <span>Bole, Addis Ababa, Ethiopia</span>
+                        <span>Addis Ababa, Bole, Ethiopia</span>
                       </div>
                     </div>
                   </div>

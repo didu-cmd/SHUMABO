@@ -78,7 +78,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   <MapPin className="w-4 h-4 text-[#A90F1C] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#241719] block">Corporate Headquarters:</strong>
-                    <span>Bole Sub-City, Woreda 03, Addis Ababa, Ethiopia</span>
+                    <span>Addis Ababa, Bole, Ethiopia</span>
                   </div>
                 </div>
 
@@ -94,7 +94,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   <Mail className="w-4 h-4 text-[#A90F1C] shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-[#241719] block">Commercial Email:</strong>
-                    <span>renderreal87@gmail.com (Primary Inquiries & Quotation Desk)</span>
+                    <span>nathandawit247@gmail.com (Primary Inquiries & Quotation Desk)</span>
                   </div>
                 </div>
 
@@ -158,12 +158,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 Geographic Headquarters
               </span>
               <h4 className="font-display text-base font-bold text-[#241719] mb-3">
-                Addis Ababa Office Map
+                Addis Ababa, Bole Office Map
               </h4>
               <div className="w-full h-52 rounded-xl overflow-hidden border border-[#E6DCDD] relative bg-[#FAF8F7]">
                 <iframe
-                  title="Shumabo Headquarters Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126115.01826359!2d38.74689!3d9.03204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa%2C%20Ethiopia!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus"
+                  title="Shumabo Headquarters Location Map - Addis Ababa, Bole"
+                  src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sBole,+Addis+Ababa,+Ethiopia!6i14"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -172,9 +172,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   referrerPolicy="no-referrer-when-downgrade"
                 />
               </div>
-              <span className="text-[11px] text-[#6F6062] block mt-2 text-center">
-                Bole Sub-City, Woreda 03, Addis Ababa, Ethiopia
-              </span>
+              <div className="mt-2 flex items-center justify-between gap-2 text-[11px] text-[#6F6062]">
+                <span>Addis Ababa, Bole, Ethiopia</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Bole,+Addis+Ababa,+Ethiopia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#A90F1C] font-medium hover:underline shrink-0"
+                >
+                  Open in Google Maps
+                </a>
+              </div>
             </div>
           </div>
 

@@ -632,7 +632,7 @@ export const InquiryForm: React.FC<InquiryFormProps> = ({
       {/* Form Submission Footer */}
       <div className="mt-8 pt-6 border-t border-[#E6DCDD] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <span className="text-xs text-[#6F6062]">
-          🔒 Secure SSL transmission. Responses delivered to <strong>renderreal87@gmail.com</strong>.
+          🔒 Secure SSL transmission. Responses delivered to <strong>nathandawit247@gmail.com</strong>.
         </span>
 
         <button

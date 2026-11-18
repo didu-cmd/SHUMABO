@@ -157,13 +157,13 @@ app.post('/api/inquiries', (req, res) => {
   existingInquiries.unshift(newInquiry);
   saveInquiries(existingInquiries);
 
-  console.log(`[EMAIL DISPATCH] Quotation Inquiry ${referenceCode} from ${businessEmail} (${companyName}) successfully dispatched to renderreal87@gmail.com`);
+  console.log(`[EMAIL DISPATCH] Quotation Inquiry ${referenceCode} from ${businessEmail} (${companyName}) successfully dispatched to nathandawit247@gmail.com`);
 
   return res.status(201).json({
     success: true,
-    message: 'Your export inquiry has been securely recorded and dispatched to renderreal87@gmail.com. Our commercial trading department will review your specifications.',
+    message: 'Your export inquiry has been securely recorded and dispatched to nathandawit247@gmail.com. Our commercial trading department will review your specifications.',
     referenceCode,
-    recipientEmail: 'renderreal87@gmail.com',
+    recipientEmail: 'nathandawit247@gmail.com',
     inquiry: {
       referenceCode,
       createdAt: newInquiry.createdAt,
